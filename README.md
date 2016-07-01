@@ -1,2 +1,3 @@
 # YellowSimpleMDE
-SimpleMDE Markdown Editor plugin for Yellow flat-file CMS.
+[SimpleMDE Markdown Editor](https://github.com/NextStepWebs/simplemde-markdown-editor) plugin for the [Yellow](https://github.com/datenstrom/yellow) flat-file CMS system.
+![](simplemde.png)
