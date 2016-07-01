@@ -9,6 +9,7 @@ var initSimpleMdeFromDOM = function() {
 		initialValue: yellow.page.rawDataEdit, // set the page text into the editor
 		forceSync: true, // save text into the original textarea
 		autofocus: true, // update and show text into the editor
+		spellChecker: false, // not all people write english documents
 	});
 }
 
