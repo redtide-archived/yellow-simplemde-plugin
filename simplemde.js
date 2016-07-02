@@ -4,13 +4,21 @@
 // SimpleMDE plugin 0.6.4
 var initSimpleMdeFromDOM = function() {
 
+	var yellow_editor = document.getElementById("yellow-pane-edit-page");
+
 	var simplemde = new SimpleMDE({
-		element: document.getElementById("yellow-pane-edit-page"),
+		element:      yellow_editor,
 		initialValue: yellow.page.rawDataEdit, // set the page text into the editor
-		forceSync: true, // save text into the original textarea
-		autofocus: true, // update and show text into the editor
-		spellChecker: false, // not all people write english documents
+		forceSync:    true, // save text into the original textarea
+		autofocus:    true, // update and show text into the editor?
+		spellChecker: false // get rid about annoying spellchecker for now
 	});
+
+	// Add some (not yet working) features as reference (see CodeMirror Docs)
+	simplemde.codemirror.setOption("lineNumbers", true);
+	simplemde.codemirror.setOption("autoRefresh", true);
+	simplemde.codemirror.setOption("autofocus", true);
+	simplemde.codemirror.setOption("styleActiveLine", true);
 }
 
 if(window.addEventListener) {
